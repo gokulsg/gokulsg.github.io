@@ -1,97 +1,78 @@
 html {
-  height: 100%;
-}
-
-body {
-  background: linear-gradient(top, #c04848 6%, #480048 100%);
-  background: -webkit-linear-gradient(top, #c04848 6%, #480048 100%);
-  background: -moz-linear-gradient(top, #c04848 6%, #480048 100%);
-  background: -o-linear-gradient(top, #c04848 6%, #480048 100%);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  font-family: 'Bree Serif', serif;
-  color: white;
-  font-weight: 100;
-}
-
-.wrapper {
-  margin-left: 5%;
-  margin-top: 5%;
-  h1 {
-    font-size: 50px;
-    margin-top: 0;
+    height: 100%;
   }
-  h3 {
-    margin-bottom: 0;
-  }
-  span {
-    display: inline-block;
-    text-align: left;
-    font-size: 26px;
-  }
-  img {
-    width: 40px;
-    margin: 80px 10px 0px 10px;
-  }
-  a {
+  
+  body {
+    background: linear-gradient(top, #c33764 6%, #1d2671 100%);
+    background: -webkit-linear-gradient(top, #c33764 6%, #1d2671 100%);
+    background: -moz-linear-gradient(top, #c33764 6%, #1d2671 100%);
+    background: -o-linear-gradient(top, #c33764 6%, #1d2671 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Bree Serif', serif;
     color: white;
-    margin: 20px;
+    font-weight: 100;
   }
-  i {
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 50%;
-  }
-  .social {
-    position: relative;
-    margin-top: 50px;
-  }
-}
+  
+  @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
-span.cursor {
-  font-size: 35px;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
-}
-
-@media (max-width: 768px) {
-  .wrapper {
-    h1 {
-      font-size: 34px;
-    }
-    h3 {
-      font-size: 28px;
-    }
-    span {
-      font-size: 22px;
-    }
-    .social {
-      i {
-        font-size: 22px;
-      }
-      a {
-        margin: 5px;
-      }
+  a, a:hover {
+      text-decoration: none;
+  }
+  
+  .socialbtns, .socialbtns ul, .socialbtns li {
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .socialbtns li {
+      list-style: none outside none;
+      display: inline-block;
+  }
+  
+  .socialbtns .fa {
+      width: 40px;
+      height: 28px;
+      color: rgb(13, 2, 39);
+      border: 1px solid rgb(253, 247, 247);
+      padding-top: 12px;
+      border-radius: 22px;
+      -moz-border-radius: 22px;
+      -webkit-border-radius: 22px;
+      -o-border-radius: 22px;
+  }
+  
+  .socialbtns .fa:hover {
+      color: #ffffff;
+      background-color: rgb(150, 105, 233);
+      border: 1px solid rgb(150, 105, 233);
+  }
+  
+  h1{
+      font-size: 5em;
+      font-weight: bolder;
+      color: rgb(245, 243, 243);
       text-align: center;
+  }
+  
+  .typing {
+    width: 50ch;
+    animation: typing 3s steps(50), blink .7s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
     }
   }
-}
-
-@keyframes blink {
-  0% {opacity: 1;}
-  50% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-@-webkit-keyframes blink {
-  0% {opacity: 1;}
-  50% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-@-moz-keyframes blink {
-  0% {opacity: 1;}
-  50% {opacity: 0;}
-  100% {opacity: 1;}
-}
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
