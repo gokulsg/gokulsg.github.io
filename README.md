@@ -1,2 +1,2 @@
 # gokulsg.github.io
-Public Website
+Personal webpage
