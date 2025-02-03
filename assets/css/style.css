@@ -1,25 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
-
-  /**
-   * colors
-   */
 
   /* gradient */
 
@@ -56,7 +35,7 @@
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
+  /* --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
   --eerie-black-2: hsl(240, 2%, 12%);
@@ -67,7 +46,24 @@
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --bittersweet-shimmer: hsl(0, 43%, 51%); */
+
+  --jet: hsl(0, 0%, 78%);
+  --onyx: hsl(240, 1%, 83%);
+  --eerie-black-1: hsl(240, 2%, 87%);
+  --eerie-black-2: hsl(240, 2%, 88%);
+  --smoky-black: hsl(0, 0%, 93%);
+  --white-1: hsl(0, 0%, 0%);
+  --white-2: hsl(0, 0%, 2%);
+  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --vegas-gold: hsl(45, 54%, 58%);
+  --light-gray: hsl(0, 0%, 16%);
+  --light-gray-70: hsla(0, 0%, 16%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+  /* new colors */
+  --eerie-black-new: hsl(240, 2%, 13%);
+
 
   /**
    * typography
@@ -96,11 +92,17 @@
    * shadow
    */
   
-  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  /* --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
   --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
-  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25); */
+
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 100%, 0.5);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 100%, 0.4);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 100%, 0.35);
+  --shadow-4: 0 25px 50px hsla(0, 0%, 100%, 0.3);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 100%, 0.25);
 
   /**
    * transition
@@ -165,6 +167,15 @@ body { background: var(--smoky-black); }
   #REUSED STYLE
 \*-----------------------------------*/
 
+
+/* New changes */
+
+.profile-img-display{
+  border-radius: 30%;
+  border: 3px solid rgba(86, 84, 84, 0.703);
+}
+
+
 .sidebar,
 article {
   background: var(--eerie-black-2);
@@ -197,11 +208,20 @@ article {
   z-index: 1;
 }
 
-.icon-box::before {
+/* .icon-box::before {
   content: "";
   position: absolute;
   inset: 1px;
   background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+} */
+
+.icon-box::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-new);
   border-radius: inherit;
   z-index: -1;
 }
@@ -331,9 +351,15 @@ main {
   gap: 15px;
 }
 
-.avatar-box {
+/* .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+} */
+
+.avatar-box {
+  /* background: rgba(83, 83, 82, 0.714); */
+  background: var(--eerie-black-2);
+  border-radius: 10px;
 }
 
 .info-content .name {
@@ -454,12 +480,25 @@ main {
   #NAVBAR
 \*-----------------------------------*/
 
-.navbar {
+/* .navbar {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   background: hsla(240, 1%, 17%, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--jet);
+  border-radius: 12px 12px 0 0;
+  box-shadow: var(--shadow-2);
+  z-index: 5;
+} */
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: hsla(0, 0%, 58%, 0.75);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
