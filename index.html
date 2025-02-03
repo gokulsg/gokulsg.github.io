@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gokul Personal webpage</title>
+  <title>Gokul Personal Webpage</title>
 
   <!--
     - custom css link
@@ -37,13 +37,13 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img class = "profile-img-display" src="./assets/images/Gokul_photo.png" alt="Gokul" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Gokul Srinivasagan</h1>
+          <h1 class="name" title="Gokul">Gokul Srinivasagan</h1>
 
-          <p class="title">Data Scientist</p>
+          <p class="title">AI Researcher</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -69,12 +69,12 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:gokulsrinivasagan@yahoo.com" class="contact-link">gokulsrinivasagan@yahoo.com</a>
+              <a href="mailto:gokulsrinivasagan@yahoo.com" class="contact-link"> gokulsrinivasagan@yahoo.com</a>
             </div>
 
           </li>
 
-          <li class="contact-item">
+          <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -86,7 +86,7 @@
               <a href="#" class="contact-link">-</a>
             </div>
 
-          </li>
+          </li> -->
 
 
           <li class="contact-item">
@@ -98,7 +98,8 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Saarbrucken, Saarland, Germany</address>
+              <!-- <address>Saarbrucken, Saarland, Germany</address> -->
+              <address>Ingolstadt, Bavaria, Germany</address>
             </div>
 
           </li>
@@ -118,6 +119,12 @@
           <li class="social-item">
             <a href="https://github.com/gokulsg" class="social-link" target="_blank">
               <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://scholar.google.com/citations?user=t6ZuhDYAAAAJ&hl=en" class="social-link" target="_blank">
+              <ion-icon name="school-sharp"></ion-icon>
             </a>
           </li>
 
@@ -154,15 +161,7 @@
           </li>
 
           <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li> -->
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link>blog</button>
           </li> -->
 
         </ul>
@@ -185,11 +184,47 @@
 
         <section class="about-text">
           <p>
-            I'm a Master's student in Language Science and Technology (Computational Linguistics) at Saarland university. I am currently working as a AI research intern at Intel corporation.
+            I am an NLP Researcher at AImotion Bavaria, focusing on developing efficient text and speech processing models for resource-constrained environments. Currently, I am pursuing my doctorate at Technische Hochschule Ingolstadt, specializing in language model optimization.
           </p>
-
           <p>
-            I received my Bachelors degree in Computer Science and Engineering from Anna University in 2020. I am interested in natural language processing and computer vision.
+            I hold a Master’s degree in Language Science and Technology (Computational Linguistics) from Saarland University and have experience working with companies such as Intel Corporation, the German Research Center for Artificial Intelligence (DFKI), and others. My expertise includes deep learning, NLP, speech processing, multimodal analysis, and model optimization, with a passion for advancing AI-driven language technologies.
+          </p>
+        </section>
+
+        <br/>
+
+        <header>
+          <h2 class="h2 article-title">Selected Publications</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            <ul>
+              <li>
+                <p>
+                  <b>Srinivasagan, Gokul</b>, and Simon Ostermann. <i>"HybridBERT-Making BERT Pretraining More Efficient Through Hybrid Mixture of Attention Mechanisms."</i> Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 4: Student Research Workshop). 2024.
+                  <a href="https://aclanthology.org/2024.naacl-srw.30/" target="_blank">[Paper]</a> <span style="color: blue"><b>Runner Up Best Paper Award</b> 🏆 </span> 
+                </p>
+                <!-- <p>
+                  <ion-icon name="trophy-sharp"></ion-icon> 
+                </p> -->
+              </li>
+              <br>
+              <li>
+                <p>
+                  <b>Srinivasagan, Gokul</b>, and Munir Georges. <i>"Retrieval Augmented Spoken Language Generation for Transport Domain."</i> International Conference on Text, Speech, and Dialogue. Cham: Springer Nature Switzerland, 2024.
+                  <a href="https://link.springer.com/chapter/10.1007/978-3-031-70566-3_1" target="_blank">[Paper]</a>
+                </p>
+              </li>
+              <br>
+              <li>
+                <p>
+                  <b>Srinivasagan, Gokul</b>, Michael Deisher, and Munir Georges. <i>"Compression of end-to-end non-autoregressive image-to-speech system for lowresourced devices."</i> Speech Communication; 15th ITG Conference. VDE, 2023.
+                  <a href="https://ieeexplore.ieee.org/abstract/document/10363017" target="_blank">[Paper]</a>
+                </p>
+              </li>
+              
+            </ul>
           </p>
         </section>
 
@@ -206,20 +241,6 @@
             <button class="modal-close-btn" data-modal-close-btn>
               <ion-icon name="close-outline"></ion-icon>
             </button>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  text
-                </p>
-              </div>
-
-            </div>
 
           </section>
 
@@ -255,12 +276,24 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Masters in Language Science and Technology (Computational Linguistics)</h4>
+              <h4 class="h4 timeline-item-title"> PhD in Artificial Intelligence</h4>
 
-              <span>2021 — Present</span>
+              <span>2024 — Present</span>
 
               <p class="timeline-text">
-                Saarland university
+                Technische Hochschule Ingolstadt, Ingolstadt, Germany
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Masters in Language Science and Technology (Computational Linguistics)</h4>
+
+              <span>2021 — 2023</span>
+
+              <p class="timeline-text">
+                Saarland university, Saarbrucken, Germany
               </p>
 
             </li>
@@ -272,7 +305,7 @@
               <span>2016 — 2020</span>
 
               <p class="timeline-text">
-                Anna university, chennai
+                Anna university, chennai, India
               </p>
 
             </li>
@@ -289,6 +322,97 @@
             </div>
 
             <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">NLP Researcher</h4>
+
+              <span>Oct 2023 — Present</span>
+
+              <p class="timeline-text">
+                AIMotion Bavaria, Ingolstadt, Germany
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research Assistant</h4>
+
+              <span>Apr 2023 — Sep 2023</span>
+
+              <p class="timeline-text">
+                German Research Centre for Artificial Intelligence (DFKI), Saarbrucken, Germany
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">AI Research Intern</h4>
+
+              <span>Nov 2022 — March 2023</span>
+
+              <p class="timeline-text">
+                Intel corporation, Munich, Germany
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research Assistant</h4>
+
+              <span>Apr 2022 — Oct 2022</span>
+
+              <p class="timeline-text">
+                Saarland University and German Research Centre for Artificial Intelligence (DFKI), <br>
+                Saarbrucken, Germany
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Scientist Intern</h4>
+
+              <span>May 2021 — Aug 2021 </span>
+
+              <p class="timeline-text">
+                Crystal Delta
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Scientist Intern</h4>
+
+              <span>Dec 2019 — Aug 2020 </span>
+
+              <p class="timeline-text">
+                Nymo Technology
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!-- Publications  -->
+
+        <!-- <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Publications</h3>
           </div>
 
           <ol class="timeline-list">
@@ -343,7 +467,7 @@
 
           </ol>
 
-        </section>
+        </section> -->
 
       </article>
 
@@ -357,29 +481,15 @@
 
       <article class="portfolio" data-page="portfolio">
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
         <section class="projects">
 
           <div class="filter-select-box">
 
             <button class="filter-select" data-select>
 
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
             </button>
 
           </div>
-
-          <ul class="project-list">
-
-          </ul>
 
         </section>
 
@@ -396,8 +506,18 @@
       <article class="blog" data-page="blog">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Publications</h2>
         </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Master's student in Language Science and Technology (Computational Linguistics) at Saarland university. I am currently working as a AI research intern at Intel corporation.
+          </p>
+
+          <p>
+            I received my Bachelors degree in Computer Science and Engineering from Anna University in 2020. I am interested in natural language processing and computer vision.
+          </p>
+        </section>
 
       </article>
 
@@ -410,34 +530,6 @@
       -->
 
       <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
       </article>
 
     </div>
